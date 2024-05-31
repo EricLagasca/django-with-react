@@ -1,0 +1,13 @@
+# Automatically activate Python virtual environment
+export VIRTUAL_ENV=$PWD/.venv
+export PATH=$PWD/.venv/bin:$PATH
+
+# Update the prompt; prefix with the virtual environment name
+if [ -z "${VENV_PROMPT:-}" ] && [ -n "${VIRTUAL_ENV}" ]; then
+    VENV_PROMPT=$(basename "${VIRTUAL_ENV}")
+fi
+export VENV_PROMPT
+
+export ALLOWED_HOSTS=*
+export DEBUG=1
+export SECRET_KEY='f&b=4l7wp-)js)lx3n6xl959vui(vfwgd16*(*p94i6!+(yy@-'
