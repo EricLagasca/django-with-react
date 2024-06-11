@@ -30,3 +30,15 @@ Notes:
 Notes:
 * I prefer to put the Django project under the `config` directory thus `...startproject config .`
 * The `website` application will house the React code
+
+
+## React 
+
+### Setup environment
+
+```
+(.venv) $ nvm use
+(.venv) $ npm init --yes
+(.venv) $ npm install react react-dom --save
+(.venv) $ npm install @babel/core @babel/preset-env @babel/preset-react @babel/preset-typescript @types/react @types/react-dom babel-loader html-webpack-plugin typescript webpack webpack-cli --save-dev
+```
