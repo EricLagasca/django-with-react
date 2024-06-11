@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run format:js && webpack --mode production",
     "format:js": "prettier --write ./package.json ./webpack.config.js ./babel.config.json ./website/src ./website/templates/website",
-    "watch": "npm run format:js && webpack --mode production --watch"
+    "watch": "webpack --mode production --watch"
   },
   "keywords": [],
   "author": "Eric Lagasca",
